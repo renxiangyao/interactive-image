@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Image Hotspot</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Image Hotspots</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <div class="image-container">
-        <img src="img/interior_design_test.PNG" alt="Interactive Image" id="interactive-image">
-        <div class="hotspot" id="hotspot-1" data-image="img/hotspot_sofa.png" data-link="https://aeq.co.nz/products/corner-left-facing-modular-fabric-sofa-multi-color?variant=42708709540036"></div>
-        <div class="hotspot" id="hotspot-3" data-image="img/hotspot_coffeeTable.png" data-link="https://aeq.co.nz/products/functional-round-coffee-table?_pos=1&_sid=08760e82f&_ss=r"></div>
-        <div class="hotspot" id="hotspot-4" data-image="img/hotspot_armchair.webp" data-link="https://aeq.co.nz/products/fabric-lounge-chair-multi-color?_pos=1&_sid=cdf167090&_ss=r"></div>
-        <div class="hotspot" id="hotspot-2" data-image="img/hotspot_floormirror.webp" data-link="https://aeq.co.nz/products/floor-mirror-yj059-full-length-mirror-bedroom-mirror-dressing-mirror?_pos=2&_sid=4f8ad1130&_ss=r"></div>
+        <img src="img/interior_design_test.PNG" alt="Main Image" class="main-image">
+        <!-- Add hotspots here -->
+        <div class="hotspot" data-image="img/hotspot_sofa.png" data-link="https://aeq.co.nz/products/corner-left-facing-modular-fabric-sofa-multi-color?variant=42708709540036" style="top: 20%; left: 30%;"></div>
+        <div class="hotspot" data-image="img/hotspot_coffeeTable.png" data-link="https://aeq.co.nz/products/functional-round-coffee-table?_pos=1&_sid=08760e82f&_ss=r" style="top: 50%; left: 60%;"></div>
     </div>
-    <div id="info-box">
-        <a href="" target="_blank" id="info-link">
-            <img src="" alt="Hotspot Info" id="info-image">
-        </a>
+    <div class="popup" id="popup">
+        <img src="" alt="Popup Image" id="popupImage">
+        <a href="" id="popupLink">Visit Link</a>
     </div>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
