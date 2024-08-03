@@ -20,7 +20,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: #ff9900;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -41,11 +41,10 @@ body {
     display: block;
 }
 
-.popup a {
-    display: block;
+#popupTitle {
     margin-top: 10px;
-    text-decoration: none;
-    color: blue;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -56,5 +55,9 @@ body {
 
     .popup img {
         max-width: 100px;
+    }
+
+    #popupTitle {
+        font-size: 16px;
     }
 }

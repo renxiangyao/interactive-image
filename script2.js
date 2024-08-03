@@ -3,15 +3,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('popup');
     const popupImage = document.getElementById('popupImage');
     const popupLink = document.getElementById('popupLink');
+    const popupTitle = document.getElementById('popupTitle');
 
     hotspots.forEach(hotspot => {
         hotspot.addEventListener('click', function () {
             const imageSrc = this.getAttribute('data-image');
             const linkHref = this.getAttribute('data-link');
+            const imageTitle = this.getAttribute('data-title');
             const rect = this.getBoundingClientRect();
 
             popupImage.src = imageSrc;
             popupLink.href = linkHref;
+            popupTitle.textContent = imageTitle;
 
             popup.style.display = 'block';
             popup.style.top = `${rect.top + window.scrollY - popup.offsetHeight}px`;
